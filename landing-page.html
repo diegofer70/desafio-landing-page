@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Teste</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             padding: 0;
@@ -15,151 +16,176 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .header {
-            margin: 20px;
-        }
-
-        .nav-container {
+        .container {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 90%;
-            margin: 0 auto;
+            flex-direction: column;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin: 20px 20px;
         }
 
-        .nav-container {
-            font-size: 20px;
+        .nav-two, .nav-two-1 {
+            color: red;
+            text-decoration: none;
             font-weight: bold;
         }
 
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
         .nav-two-1 {
-            border: 1px solid brown;
-            border-radius: 10px;
-            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid red;
+            padding: 5px 10px;
         }
 
-        .nav-two-1, .nav-two {
-            color: brown;
-            text-decoration: none;
-        }
-
-        .título {
-            color: white;
-            padding: 50px;
-            font-size: 40px;
+        .título h1 {
             text-align: center;
+            margin: 40px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 5rem;
         }
 
         .banner {
-            height: 30rem;
-            background-image: url(/banner.jpg);
-            width: 100%;
-            background-size: cover;
+            background: url(/banner.jpg);
+            height: 450px;
+        }
+
+        .search {
+            text-align: center;
+        }
+        
+        .input-address {
+            display: inline-block;
+            margin: 20px;
         }
 
         input {
-            padding: 10px 80px;
-            border: none;
+            height: 30px;
+            width: 400px;
             border-radius: 10px;
-            outline: none;
+            border: none;
+            padding: 0 10px;
         }
 
-        .pesquisa-endereco {
-            display: flex;
-            justify-content: center;
+        
+        input::placeholder {
+            color: grey;
+            opacity: 0.7;
         }
-
-        .parágrafo {
-            margin: 20px;
-            text-align: center;
-        }
-
-        .parágrafo-01 {
-            text-decoration: none;
+        
+        button {
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 100%;
+            border: none;
+            cursor: pointer;
             color: white;
+            background: none;
         }
 
-        .flex {
+        .paragraph-01 {
+            color: white;
+            text-decoration: none;
+        }
+
+        .box {
             display: flex;
-            margin: 100px;
+            padding: 50px;
         }
 
-        .texto-box {
-            text-align: center;
-            font-size: 17px;
+        .item-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid #ccc; */
+
+            padding: 20px;
+            max-width: 300px;
+            margin: auto;
         }
 
-        h3 {
-            font-size: 30px;
+        .item-box h3 {
+            margin: 10px 0;
         }
 
-        .texto-01 {
-            margin: 20px;
-            font-size: 16px;
+        .item-box div {
+            margin: 5px 0;
         }
 
+        .paragraph-box {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        .group-box .group-01 {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="nav-container">
-            <div class="logo">
-                <img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IFood_logo.svg/1280px-IFood_logo.svg.png" alt="">
+    <div class="container">
+        <div class="nav">
+            <div><a class="nav-two" href="#">Conecte-se</a></div>
+            <div><a class="nav-two-1" href="#">Inscrever-se</a></div>
+        </div>
+
+        <div class="banner">
+            <div class="título">
+                <h1>Restaurantes e muito mais, entregues na sua porta</h1>
             </div>
-            <div class="nav">
-                <div><a class="nav-two" href="#">Conecte-se</a></div>
-                <div><a class="nav-two-1" href="#">Inscrever-se</a></div>
+
+            <div class="search">
+                <div class="input-address">
+                    <input type="address" placeholder="Insira o endereço de entrega">
+                    <button><i class="fas fa-search icon"></i></button>
+                </div>
+                <div class="paragraph">
+                    <p><a class="paragraph-01" href="#">Faça login para obter o endereço salvo</a></p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="banner">
-        <div class="título">
-            <h1>Restaurantes e muito mais, entregues na sua porta</h1>
-        </div>
-        <div class="pesquisa-endereco">
-            <input type="address" placeholder="Insira o endereço de entrega">
-        </div>
-        <div class="parágrafo">
-            <p><a class="parágrafo-01" href="#">Faça login para obter o endereço salvo</a></p>
-        </div>
-    </div>
-
-    <div class="flex">
-        <div class="texto-box">
-            <img width="180px" src="https://i.pinimg.com/736x/72/7e/f7/727ef7286f28b289fd1188eefdd2b626.jpg" alt="">
-            <h3>Torne-se um Dasher</h3>
-            <p class="texto-01">Como motorista de entrega, você ganhará dinheiro de forma confiável trabalhando a qualquer hora e em qualquer lugar.</p>
-            <a href="#">Começar significado</a>
-        </div>
+        <div class="box">
+            <div class="item-box">
+                <img width="150px" src="/entrega.png" alt="">
+                <h3>Torne-se um Dasher</h3>
+                <div>Como motorista de entrega, você ganhará dinheiro de forma confiável trabalhando a qualquer hora e em qualquer lugar.</div>
+                <div><a class="paragraph-box" href="#">Começar significado</a></div>
+            </div>
+            
+            <div class="item-box">
+                <img width="150px" src="/loja.png" alt="">
+                <h3>Torne-se um parceiro</h3>
+                <div>Expanda seus negócios e alcance novos clientes fazendo parceria conosco.</div>
+                <div><a class="paragraph-box" href="#">Cadastre sua loja</a></div>
+            </div>
     
-        <div class="texto-box">
-            <img width="180px" src="https://i.pinimg.com/736x/72/7e/f7/727ef7286f28b289fd1188eefdd2b626.jpg" alt="">
-            <h3>Torne-se um Dasher</h3>
-            <p class="texto-01">Como motorista de entrega, você ganhará dinheiro de forma confiável trabalhando a qualquer hora e em qualquer lugar.</p>
-            <a href="#">Cadastre sua loja</a>
+            <div class="item-box">
+                <img width="150px" src="/app.png" alt="">
+                <h3>Experimente o aplicativo</h3>
+                <div>Experimente o melhor que seu vizinho tem a oferecer, tudo em um só app..</div>
+                <div><a class="paragraph-box" href="#">Baixe o aplicativo</a></div>
+            </div>
         </div>
-    
-        <div class="texto-box">
-            <img width="180px" src="https://i.pinimg.com/736x/72/7e/f7/727ef7286f28b289fd1188eefdd2b626.jpg" alt="">
-            <h3>Torne-se um Dasher</h3>
-            <p class="texto-01">Como motorista de entrega, você ganhará dinheiro de forma confiável trabalhando a qualquer hora e em qualquer lugar.</p>
-            <a href="#">Baixe o aplicativo</a>
-        </div>
-    </div>
 
-    <div>
-        <div style="background-color: blue;">
-            <h3>Está tudo aqui. Tudo em um aplicativo.</h3>
-            <p class="texto-02">Discover local, on-demand delivery of Pickup from restaurants, nearby grocery and convenience stores, and more.</p>
-            <button>Baixe o aplicativo</button>
+        <div class="group-box">
+            <div class="group-01">
+                <h2>Está tudo aqui. tudo em um aplicativo.</h2>
+                <p>Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
+                <a href="#">Baixe o aplicativo</a>
+            </div>
+            <div class="img-box">
+                <img width="600px" src="/sushi.jpg" alt="">
+            </div>
         </div>
     </div>
 </body>
