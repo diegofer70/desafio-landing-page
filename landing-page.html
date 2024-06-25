@@ -96,7 +96,8 @@
 
         .box {
             display: flex;
-            padding: 50px;
+            margin: 30px;
+            padding-left: 20px
         }
 
         .item-box {
@@ -125,21 +126,48 @@
             font-weight: bold;
         }
 
-        .group-box .group-01 .group-02 {
-            display: flex;
-            align-items: center;
+        .apresentacao-box {
+            margin-left: 190px;
         }
 
-        .group-01 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            /* border: 1px solid #ccc; */
+        .apresentacao-box-02 {
+            
+        }
 
-            padding: 20px;
-            max-width: 300px;
-            margin: auto;
+        .apresentacao-descricao {
+            width: 28%;
+            float: left;
+            padding-top: 70px;
+        }
+
+        .img-apresentacao {
+            width: 28%;
+            float: left;
+            padding-left: 150px;
+        }
+
+        .title-apresentacao {
+            color: #3b3322;
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        .descricao-apresentacao {
+            color: grey;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 20px 0 20px 0;
+        }
+
+        .bt-red {
+            background: red;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -189,23 +217,25 @@
             </div>
         </div>
 
-        <div class="group-box">
-            <div class="group-01">
-                <h2>Está tudo aqui. tudo em um aplicativo.</h2>
-                <p>Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
-                <a href="#">Baixe o aplicativo</a>
+        <div class="apresentacao-box">
+            <div class="apresentacao-descricao">
+                <h2 class="title-apresentacao">Está tudo aqui. tudo em um aplicativo.</h2>
+                <p class="descricao-apresentacao">Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
+                <a class="bt-red" href="#">Baixe o aplicativo</a>
             </div>
-            <div class="img-box">
-                <img width="400px" src="/sushi.jpg" alt="">
+            <div class="img-apresentacao">
+                <img width="600px" src="/sushi.jpg" alt="">
             </div>
+        </div>
 
-            <div class="group-02">
-                <h2>Está tudo aqui. tudo em um aplicativo.</h2>
-                <p>Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
-                <a href="#">Baixe o aplicativo</a>
+        <div class="apresentacao-box-02">
+            <div class="img-apresentacao-02">
+                <img width="600px" src="/sushi.jpg" alt="">
             </div>
-            <div class="img-box">
-                <img width="400px" src="/burger.jpg" alt="">
+            <div class="apresentacao-descricao-02">
+                <h2 class="title-apresentacao-02">Está tudo aqui. tudo em um aplicativo.</h2>
+                <p class="descricao-apresentacao">Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
+                <a class="bt-red" href="#">Baixe o aplicativo</a>
             </div>
         </div>
     </div>
