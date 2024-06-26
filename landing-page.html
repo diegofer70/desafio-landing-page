@@ -1,303 +1,363 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Teste</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Delivery</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+      }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            gap: 10px;
-            margin: 20px 20px;
-        }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
 
-        .nav-two, .nav-two-1 {
-            color: red;
-            text-decoration: none;
-            font-weight: bold;
-        }
+      .nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: 20px 20px;
+      }
 
-        .nav-two-1 {
-            border-radius: 20px;
-            border: 1px solid red;
-            padding: 5px 10px;
-        }
+      .nav-two,
+      .nav-two-1 {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-        .título h1 {
-            text-align: center;
-            margin: 40px;
-        }
+      .nav-two-1 {
+        border-radius: 20px;
+        border: 1px solid red;
+        padding: 5px 10px;
+      }
 
-        h1 {
-            color: white;
-            font-size: 5rem;
-        }
+      .título h1 {
+        text-align: center;
+        margin: 40px;
+      }
 
-        .banner {
-            background: url(/banner.jpg);
-            height: 450px;
-        }
+      h1 {
+        color: white;
+        font-size: 5rem;
+      }
 
-        .search {
-            text-align: center;
-        }
-        
-        .input-address {
-            display: inline-block;
-            margin: 20px;
-        }
+      .banner {
+        background: url(/banner.jpg);
+        height: 450px;
+      }
 
-        input {
-            height: 30px;
-            width: 400px;
-            border-radius: 10px;
-            border: none;
-            padding: 0 10px;
-        }
+      .search {
+        text-align: center;
+      }
 
-        
-        input::placeholder {
-            color: grey;
-            opacity: 0.7;
-        }
-        
-        button {
-            top: 0;
-            right: 0;
-            width: 50px;
-            height: 100%;
-            border: none;
-            cursor: pointer;
-            color: white;
-            background: none;
-        }
+      .input-address {
+        display: inline-block;
+        margin: 20px;
+      }
 
-        .paragraph-01 {
-            color: white;
-            text-decoration: none;
-        }
+      input {
+        height: 30px;
+        width: 400px;
+        border-radius: 10px;
+        border: none;
+        padding: 0 10px;
+      }
 
-        .box {
-            display: flex;
-            margin: 30px;
-            padding-left: 20px
-        }
+      input::placeholder {
+        color: grey;
+        opacity: 0.7;
+      }
 
-        .item-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            /* border: 1px solid #ccc; */
+      button {
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        color: white;
+        background: none;
+      }
 
-            padding: 20px;
-            max-width: 300px;
-            margin: auto;
-        }
+      .paragraph-01 {
+        color: white;
+        text-decoration: none;
+      }
 
-        .item-box h3 {
-            margin: 10px 0;
-        }
+      .box {
+        display: flex;
+        margin: 30px;
+        padding-left: 20px;
+      }
 
-        .item-box div {
-            margin: 5px 0;
-        }
+      .item-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #ccc; */
 
-        .paragraph-box {
-            text-decoration: none;
-            color: red;
-            font-weight: bold;
-        }
+        padding: 20px;
+        max-width: 300px;
+        margin: auto;
+      }
 
-        .apresentacao-box {
-            margin-left: 190px;
-        }
+      .item-box h3 {
+        margin: 10px 0;
+      }
 
-        .apresentacao-box-02 {
-            
-        }
+      .item-box div {
+        margin: 5px 0;
+      }
 
-        .apresentacao-descricao {
-            width: 28%;
-            float: left;
-            padding-top: 70px;
-        }
+      .paragraph-box {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+      }
 
-        .img-apresentacao {
-            width: 28%;
-            float: left;
-            padding-left: 150px;
-        }
+      .apresentacao-box {
+        margin-left: 190px;
+      }
 
-        .title-apresentacao {
-            color: #3b3322;
-            font-size: 40px;
-            line-height: 48px;
-        }
+      .apresentacao-descricao {
+        width: 28%;
+        float: left;
+        padding-top: 70px;
+      }
 
-        .descricao-apresentacao {
-            color: grey;
-            font-size: 18px;
-            line-height: 24px;
-            margin: 20px 0 20px 0;
-        }
+      .img-apresentacao {
+        width: 28%;
+        float: left;
+        padding-left: 150px;
+      }
 
-        .bt-red {
-            background: red;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 4px;
-            display: inline-block;
-        }
+      .title-apresentacao {
+        color: #3b3322;
+        font-size: 40px;
+        line-height: 48px;
+      }
 
-        .footer-container {
-            max-width: 1170px;
-            margin: auto;
-        }
+      .descricao-apresentacao {
+        color: grey;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 20px 0 20px 0;
+      }
 
-        .footer {
-            background-color: rgb(36, 36, 36);
-            padding: 70px 0;
-        }
+      .bt-red {
+        background: red;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 4px;
+        display: inline-block;
+      }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: left;
+      }
 
-        ul {
-            list-style: none;
-        }
+      footer h4 {
+        margin-bottom: 10px;
+      }
 
-        .footer-col {
-            width: 25%;
-            padding: 0 15px;
-        }
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 5px;
+      }
+
+      footer ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      footer ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer-top div {
+        flex: 1;
+        margin: 10px;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+      }
+
+      .footer-bottom ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-bottom ul li {
+        margin: 0 10px;
+      }
+
+      .app-links img {
+        max-height: 40px;
+        margin: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="nav">
-            <div><a class="nav-two" href="#">Conecte-se</a></div>
-            <div><a class="nav-two-1" href="#">Inscrever-se</a></div>
+      <div class="nav">
+        <div><a class="nav-two" href="#">Conecte-se</a></div>
+        <div><a class="nav-two-1" href="#">Inscrever-se</a></div>
+      </div>
+
+      <div class="banner">
+        <div class="título">
+          <h1>Restaurantes e muito mais, entregues na sua porta</h1>
         </div>
 
-        <div class="banner">
-            <div class="título">
-                <h1>Restaurantes e muito mais, entregues na sua porta</h1>
-            </div>
+        <div class="search">
+          <div class="input-address">
+            <input type="address" placeholder="Insira o endereço de entrega" />
+            <button><i class="fas fa-search icon"></i></button>
+          </div>
+          <div class="paragraph">
+            <p>
+              <a class="paragraph-01" href="#">Faça login para obter o endereço salvo</a>
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="search">
-                <div class="input-address">
-                    <input type="address" placeholder="Insira o endereço de entrega">
-                    <button><i class="fas fa-search icon"></i></button>
-                </div>
-                <div class="paragraph">
-                    <p><a class="paragraph-01" href="#">Faça login para obter o endereço salvo</a></p>
-                </div>
-            </div>
+      <div class="box">
+        <div class="item-box">
+          <img width="150px" src="/entrega.png" alt="" />
+          <h3>Torne-se um Dasher</h3>
+          <div>
+            Como motorista de entrega, você ganhará dinheiro de forma confiável
+            trabalhando a qualquer hora e em qualquer lugar.
+          </div>
+          <div>
+            <a class="paragraph-box" href="#">Começar significado</a>
+          </div>
         </div>
 
-        <div class="box">
-            <div class="item-box">
-                <img width="150px" src="/entrega.png" alt="">
-                <h3>Torne-se um Dasher</h3>
-                <div>Como motorista de entrega, você ganhará dinheiro de forma confiável trabalhando a qualquer hora e em qualquer lugar.</div>
-                <div><a class="paragraph-box" href="#">Começar significado</a></div>
-            </div>
-            
-            <div class="item-box">
-                <img width="150px" src="/loja.png" alt="">
-                <h3>Torne-se um parceiro</h3>
-                <div>Expanda seus negócios e alcance novos clientes fazendo parceria conosco.</div>
-                <div><a class="paragraph-box" href="#">Cadastre sua loja</a></div>
-            </div>
-    
-            <div class="item-box">
-                <img width="150px" src="/app.png" alt="">
-                <h3>Experimente o aplicativo</h3>
-                <div>Experimente o melhor que seu vizinho tem a oferecer, tudo em um só app..</div>
-                <div><a class="paragraph-box" href="#">Baixe o aplicativo</a></div>
-            </div>
+        <div class="item-box">
+          <img width="150px" src="/loja.png" alt="" />
+          <h3>Torne-se um parceiro</h3>
+          <div>
+            Expanda seus negócios e alcance novos clientes fazendo parceria
+            conosco.
+          </div>
+          <div><a class="paragraph-box" href="#">Cadastre sua loja</a></div>
         </div>
 
-        <div class="apresentacao-box">
-            <div class="apresentacao-descricao">
-                <h2 class="title-apresentacao">Está tudo aqui. tudo em um aplicativo.</h2>
-                <p class="descricao-apresentacao">Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
-                <a class="bt-red" href="#">Baixe o aplicativo</a>
-            </div>
-            <div class="img-apresentacao">
-                <img width="600px" src="/sushi.jpg" alt="">
-            </div>
+        <div class="item-box">
+          <img width="150px" src="/app.png" alt="" />
+          <h3>Experimente o aplicativo</h3>
+          <div>
+            Experimente o melhor que seu vizinho tem a oferecer, tudo em um só
+            app..
+          </div>
+          <div><a class="paragraph-box" href="#">Baixe o aplicativo</a></div>
         </div>
+      </div>
 
-        <div class="apresentacao-box-02">
-            <div class="img-apresentacao-02">
-                <img width="600px" src="/sushi.jpg" alt="">
-            </div>
-            <div class="apresentacao-descricao-02">
-                <h2 class="title-apresentacao-02">Está tudo aqui. tudo em um aplicativo.</h2>
-                <p class="descricao-apresentacao">Descubra a entrega local sob demanda de coleta em restaurantes, supermercados e lojas de conveniência próximas e muito mais.</p>
-                <a class="bt-red" href="#">Baixe o aplicativo</a>
-            </div>
+      <div class="apresentacao-box">
+        <div class="apresentacao-descricao">
+          <h2 class="title-apresentacao">
+            Está tudo aqui. tudo em um aplicativo.
+          </h2>
+          <p class="descricao-apresentacao">
+            Descubra a entrega local sob demanda de coleta em restaurantes,
+            supermercados e lojas de conveniência próximas e muito mais.
+          </p>
+          <a class="bt-red" href="#">Baixe o aplicativo</a>
         </div>
+        <div class="img-apresentacao">
+          <img width="600px" src="/sushi.jpg" alt="" />
+        </div>
+      </div>
 
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>iFood</h4>
-                        <ul>
-                            <li><a href="#">Site Institucional</a></li>
-                            <li><a href="#">Fale conosco</a></li>
-                            <li><a href="#">Carreiras</a></li>
-                            <li><a href="#">Entregadores</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Descubra</h4>
-                        <ul>
-                            <li><a href="#">Cadastre seu Restaurante ou Mercado</a></li>
-                            <li><a href="#">iFood Shop</a></li>
-                            <li><a href="#">iFood Card</a></li>
-                            <li><a href="#">Blog iFood Empresas</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-col">
-                        <h4>Social</h4>
-                        <div class="social-links">
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+      <div class="apresentacao-box-02">
+        <div class="img-apresentacao-02">
+          <img width="600px" src="/sushi.jpg" alt="" />
+        </div>
+        <div class="apresentacao-descricao-02">
+          <h2 class="title-apresentacao-02">
+            Está tudo aqui. tudo em um aplicativo.
+          </h2>
+          <p class="descricao-apresentacao">
+            Descubra a entrega local sob demanda de coleta em restaurantes,
+            supermercados e lojas de conveniência próximas e muito mais.
+          </p>
+          <a class="bt-red" href="#">Baixe o aplicativo</a>
+        </div>
+      </div>
     </div>
-</body>
+
+    <footer>
+      <div class="footer-top">
+        <div>
+          <h4>Descubra</h4>
+          <ul>
+            <li><a href="#">Cadastre seu Restaurante ou Mercado</a></li>
+            <li><a href="#">iFood Card</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Cozinhas perto de você</h4>
+          <ul>
+            <li><a href="#">Pizza perto de mim</a></li>
+            <li><a href="#">Comida Chinesa Perto de Mim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Conheça-nos</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Carreiras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Deixe-nos ajudá-lo</h4>
+          <ul>
+            <li><a href="#">Detalhes da conta</a></li>
+            <li><a href="#">Histórico de pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
